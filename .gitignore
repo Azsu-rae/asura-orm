@@ -1,0 +1,10 @@
+
+.*
+
+!.gitignore
+
+target/
+bin/
+
+ressources/databases/AutoRent.db
+TODO.txt
