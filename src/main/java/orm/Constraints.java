@@ -1,4 +1,4 @@
-package orm.util;
+package orm;
 
 import java.lang.annotation.*;
 

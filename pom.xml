@@ -11,38 +11,9 @@
     <version>1.0</version>
 
     <properties>
-
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
-
-        <autorent.db.path>./ressources/databases/AutoRent.db</autorent.db.path>
-        <autorent.samples>./ressources/samples/</autorent.samples>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-
-                    <systemProperties>
-                      <systemProperty>
-                        <key>autorent.db.path</key>
-                        <value>${autorent.db.path}</value>
-                      </systemProperty>
-                      <systemProperty>
-                        <key>autorent.samples</key>
-                        <value>${autorent.samples}</value>
-                      </systemProperty>
-                    </systemProperties>
-
-                    <mainClass>Main</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
         <dependency>

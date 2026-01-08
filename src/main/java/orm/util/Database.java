@@ -15,7 +15,7 @@ import static orm.util.Console.*;
 public class Database {
 
     private static Map<Aggregation,Integer> occurences = new HashMap<>();
-    private static String path = System.getenv("AUTORENT_SAMPLE_PATH");
+    private static String path = System.getenv("SAMPLE_PATH");
 
 
     public static void readSampleData() {

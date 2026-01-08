@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 set -euo pipefail
@@ -40,6 +39,6 @@ echo
 # Run program
 CLASSPATH="$OUT_DIR:$SQLITE_JAR:$JSON_JAR"
 
-export AUTORENT_DB_PATH=./ressources/databases/AutoRent.db
-export AUTORENT_SAMPLE_PATH=./ressources/samples/
+export DB_PATH=./ressources/databases/AutoRent.db
+export SAMPLE_PATH=./ressources/samples/
 java -cp "$CLASSPATH" Main

@@ -21,7 +21,7 @@ import java.io.File;
 
 import orm.Reflection.FieldInfos;
 import orm.util.BugDetectedException;
-import orm.util.Constraints;
+import orm.Constraints;
 import orm.util.Pair;
 
 import static orm.util.Console.error;
@@ -33,7 +33,7 @@ import static orm.DataMapper.fetchResutls;
 public abstract class Table {
 
     // database path relative to the project's root directory
-    private static String dbPath = System.getenv("AUTORENT_DB_PATH");
+    private static String dbPath = System.getenv("DB_PATH");
 
     // loading subclasses into the JVM
     private static Set<Class<? extends Table>> models = new HashSet<>();

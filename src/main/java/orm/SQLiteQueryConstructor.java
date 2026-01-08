@@ -3,7 +3,7 @@ package orm;
 import java.util.Arrays;
 import java.util.Vector;
 
-import orm.util.Constraints;
+import orm.Constraints;
 import orm.util.Pair;
 import static orm.util.Console.print;
 
