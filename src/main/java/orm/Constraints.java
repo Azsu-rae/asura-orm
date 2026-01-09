@@ -9,6 +9,8 @@ public @interface Constraints {
     String type();
 
     boolean nullable() default true; // Nothing can compensate for nullable() except primaryKey of course
+    boolean primaryKey() default false;
+    boolean foreignKey() default false;
 
     boolean bounded() default false;
     boolean lowerBound() default false;
@@ -18,7 +20,4 @@ public @interface Constraints {
     boolean searchedText() default false;   // use the LIKE operator
     boolean enumerated() default false;
     boolean unique() default false;
-
-    boolean primaryKey() default false;
-    boolean foreignKey() default false;
 }
